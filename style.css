@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.border {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+
+.border > a {
+    color: white;
+    font-size: medium;
+    font-family: fantasy;
+    margin-left: 5%;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: darkorange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    width: 40%;
+    height: 40px;
+    margin-left: 8%;
+    display: flex;
+}
+
+.nav-left > img {
+    width: 50px;
+    height: 30px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.nav-left > p {
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-right {
+    width: 30%;
+    height: 40px;
+    margin-right: 2%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.nav-right > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-right > ul > li {
+    margin-right: 20px;
+}
+
+.nav-right > ul > li:last-child {
+    margin-right: 0;
+}
+
+.nav-right > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-image: url("./20.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-top {
+    margin: 10px auto;
+    width: 90%;
+    height: 300px;
+}
+
+.container-top > img {
+    height: 100px;
+    width: 30%;
+}
+
+.container-mid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-mid-left,
+.container-mid-right {
+    width: 30%;
+    height: 400px;
+    background-color: black;
+}
+
+.container-mid-mid {
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container-mid-mid > a {
+    color: white;
+    font-size: large;
+    font-family: inherit;
+    display: inline-block;
+}
+
+.image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.slides {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+h1 {
+    color: white;
+    font-size: large;
+    font-family: inherit;
+    text-align: center;
+}
+
+.container-mid-left > ul > li,
+.container-mid-right > ul > li {
+    color: white;
+    font-size: medium;
+    font-family: inherit;
+    text-align: left;
+}
+
+.container-bottom {
+    padding: 20px;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.img-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-item > p {
+    color: white;
+    font-size: medium;
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: darkorange;
+    min-height: 500px;
+}
+
+.footer-top {
+    height: 40px;
+}
+
+.footer-mid {
+    justify-content: space-between;
+    flex: 1;
+    display: flex;
+}
+
+.footer-mid-left,
+.footer-mid-right {
+    padding: 10px;
+    margin: 10px 50px;
+    height: 250px;
+    width: 40%;
+    background-color: darkgray;
+}
+
+.footer-mid-left > p,
+.footer-mid-right > p {
+    color: white;
+    font-family: monospace;
+    font-size: medium;
+}
+
+.footer-bottom {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+    line-height: 50px;
+    color: white;
+}
